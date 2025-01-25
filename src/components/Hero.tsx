@@ -32,7 +32,7 @@ export default function Hero() {
               onClick={scrollToContact}
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center"
             >
-              Solicite um Orçamento
+              Solicite um orçamento
               <ArrowRight className="ml-2" size={20} />
             </button>
             <a
@@ -41,7 +41,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="bg-transparent border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors text-center"
             >
-              Agende Seu Atendimento
+              Agende seu atendimento
             </a>
           </div>
         </div>
