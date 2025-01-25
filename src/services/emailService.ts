@@ -27,8 +27,8 @@ export const sendEmail = async (formData: ContactForm) => {
   
   try {
     const response = await emailjs.send(
-      'service_ymytrei', //service_ID
-      'template_pbh8ycc', //template_ID
+      'service_f6kqy9r', //service_ID
+      'template_e4lg3xc', //template_ID
       {
         ticket_number: ticketNumber,
         from_name: formData.name,
@@ -37,7 +37,7 @@ export const sendEmail = async (formData: ContactForm) => {
         message: formData.message,
         images: imageBase64Array,
       },
-      'HkkbOE8Z4QRNULeaW' //Public_key
+      '_1afcTcyMEidk_f1q' //Public_key
     );
     return { response, ticketNumber };
   } catch (error) {
