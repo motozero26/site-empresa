@@ -15,8 +15,8 @@ export default function ImageUploadZone({ onFilesSelected, error }: ImageUploadZ
     const validFiles: File[] = [];
     const totalSize = files.reduce((sum, file) => sum + file.size, 0);
     
-    if (totalSize > 20 * 1024 * 1024) {
-      toast.error('O tamanho total das imagens excede 20MB');
+    if (totalSize > 40 * 1024 * 1024) {
+      toast.error('O tamanho total das imagens excede 40MB');
       return [];
     }
 
@@ -89,7 +89,7 @@ export default function ImageUploadZone({ onFilesSelected, error }: ImageUploadZ
         Arraste e solte imagens aqui ou clique para selecionar
       </p>
       <p className="text-xs text-gray-500 mt-1">
-        Tamanho máximo: 20MB
+        Tamanho máximo: 40MB
       </p>
       {error && <p className="text-sm text-red-500 mt-1">{error}</p>}
     </div>

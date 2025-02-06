@@ -1,4 +1,4 @@
-const MAX_TOTAL_SIZE = 20 * 1024 * 1024; // 20MB
+const MAX_TOTAL_SIZE = 40 * 1024 * 1024; // 20MB
 const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/gif'];
 
 export const validateImageFile = async (file: File): Promise<File | null> => {
@@ -10,7 +10,7 @@ export const validateImageFile = async (file: File): Promise<File | null> => {
 
   // Check file size
   if (file.size > MAX_TOTAL_SIZE) {
-    toast.error(`${file.name} excede o tamanho máximo permitido de 20MB`);
+    toast.error(`${file.name} excede o tamanho máximo permitido de 40MB`);
     return null;
   }
 
